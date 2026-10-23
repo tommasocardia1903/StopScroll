@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "updated": "2026-10-23",
+  "apps": {
+    "com.google.android.youtube": {
+      "name": "YouTube",
+      "player_ids": [
+        "reel_player_page_container",
+        "reel_recycler",
+        "reel_watch_player",
+        "reel_player_overlay_container",
+        "shorts_player_container"
+      ],
+      "tab_ids": [
+        "shorts_pivot_item"
+      ],
+      "tab_labels": [
+        "Shorts"
+      ],
+      "action_labels": [
+        "mi piace", "like", "commenti", "comment", "condividi", "share", "remix"
+      ]
+    },
+    "com.instagram.android": {
+      "name": "Instagram",
+      "player_ids": [
+        "clips_viewer_view_pager",
+        "clips_viewer_container",
+        "clips_video_container"
+      ],
+      "tab_ids": [
+        "clips_tab"
+      ],
+      "tab_labels": [
+        "Reels"
+      ],
+      "action_labels": [
+        "mi piace", "like", "commenta", "comment", "condividi", "share", "invia", "send", "remix"
+      ]
+    }
+  }
+}

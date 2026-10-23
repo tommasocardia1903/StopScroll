@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StopScroll</string>
+    <string name="tile_label">Blocca Shorts</string>
+    <string name="a11y_description">StopScroll legge la struttura dello schermo solo dentro YouTube e Instagram, per riconoscere Shorts e Reels e impedirne la visione. Non raccoglie né invia contenuti: l\'unico collegamento a internet serve a scaricare le firme aggiornate dal tuo repository GitHub.</string>
+</resources>

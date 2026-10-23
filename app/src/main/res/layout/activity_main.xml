@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- STATO DEL SERVIZIO -->
+        <TextView
+            android:id="@+id/serviceStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnA11y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attiva il servizio di accessibilità" />
+
+        <TextView
+            android:id="@+id/restrictedHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:text="Se l'interruttore di StopScroll è grigio: apri Info app → menu ⋮ in alto a destra → «Consenti impostazioni con limitazioni», poi riprova."
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnAppInfo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apri Info app" />
+
+        <!-- BLOCCO -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="Blocco" />
+
+        <Switch
+            android:id="@+id/swEnabled"
+            style="@style/Row"
+            android:text="Blocco attivo"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/swYoutube"
+            style="@style/Row"
+            android:text="YouTube Shorts" />
+
+        <Switch
+            android:id="@+id/swInstagram"
+            style="@style/Row"
+            android:text="Instagram Reels" />
+
+        <TextView
+            style="@style/SectionTitle"
+            android:text="Come bloccare" />
+
+        <Switch
+            android:id="@+id/swBack"
+            style="@style/Row"
+            android:text="Esci subito da Shorts e Reels (torna indietro)" />
+
+        <Switch
+            android:id="@+id/swCover"
+            style="@style/Row"
+            android:text="Copri il pulsante Shorts/Reels nella barra in basso" />
+
+        <!-- FASCIA ORARIA -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="Fascia oraria" />
+
+        <Switch
+            android:id="@+id/swSchedule"
+            style="@style/Row"
+            android:text="Blocca solo in questa fascia oraria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dalle ore " />
+
+            <EditText
+                android:id="@+id/etFrom"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  alle ore " />
+
+            <EditText
+                android:id="@+id/etTo"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2" />
+        </LinearLayout>
+
+        <!-- RIPARAZIONE -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="Riparazione dopo gli aggiornamenti" />
+
+        <TextView
+            android:id="@+id/appsStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnTeachYt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insegna YouTube" />
+
+        <Button
+            android:id="@+id/btnTeachIg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insegna Instagram" />
+
+        <Button
+            android:id="@+id/btnForget"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dimentica le firme imparate" />
+
+        <!-- GITHUB -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="Aggiornamenti da GitHub" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repository (utente/nome), es. tommaso/stopscroll"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etRepo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="utente/stopscroll"
+            android:inputType="textNoSuggestions|textUri"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aggiorna firme ora" />
+
+        <TextView
+            android:id="@+id/refreshStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" />
+
+        <!-- DIAGNOSTICA -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="Diagnostica" />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condividi diagnostica" />
+
+    </LinearLayout>
+</ScrollView>
